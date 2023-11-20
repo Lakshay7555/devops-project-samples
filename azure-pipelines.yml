@@ -20,7 +20,7 @@ variables:
   environmentName: 'az400app1'
 
   # Project root folder. Point to the folder containing manage.py file.
-  projectRoot: devops-project-samples/python/flask/webapp/Application
+  projectRoot: /python/flask/webapp/1Application
 
   # Python version: 3.7
   pythonVersion: '3.7'
@@ -44,7 +44,7 @@ stages:
         python -m pip install --upgrade pip
         pip install setup
         pip install -r requirements.txt
-      workingDirectory: devops-project-samples/python/flask/webapp/Application
+      workingDirectory: /python/flask/webapp/1Application
       displayName: "Install requirements"
 
     - task: ArchiveFiles@2
